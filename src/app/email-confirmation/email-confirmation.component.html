@@ -1,0 +1,45 @@
+<div *ngIf="step === stepEnum.notSent" class="container">
+    <div class="main-content">
+      <div class="input_wrapper">
+        <label class="label-with-text" for="email">
+          Enter your email to receive a verification code
+        </label>
+        <input (keyup)="handleKeyUp($event)" email ngModel id="email" type="email" autocomplete="off" #emailModel="ngModel"/>
+      </div>
+      <div *ngFor="let error of emailValidationErrors" class="label-error">
+        {{error}}
+      </div>
+      <button (click)="onClickSend(emailModel)"class="btn-green">Send code</button>
+      <div class="label-to-note">
+        If the code does not arrive, please check your Spam folder
+      </div>
+    </div>
+  </div>
+  <div *ngIf="step === stepEnum.sent" class="container">
+    <div class="main-content">
+      <div class="input_wrapper">
+        <label class="label-with-text" for="verification-input">
+          Enter the verification code we've sent you
+        </label>
+        <input (keyup)="handleKeyUp($event)" ngModel id="verification-input" type="number" inputmode="numeric" #verificationCodeModel="ngModel"/>
+      </div>
+      <div *ngFor="let error of verificationCodeValidationErrors" class="label-error">
+        {{error}}
+      </div>
+      <button (click)="onClickConfirmEmail(verificationCodeModel)" class="btn-green">Confirm email</button>
+      <button class="btn-gray">Resend code</button>
+      <div class="label-to-note">
+        If the code does not arrive, please check your Spam folder or push the button "Resend code"
+      </div>
+    </div>
+  </div>
+  <div *ngIf="step === stepEnum.confirmed" class="container">
+    <div class="main-content">
+      <div class="success-emoji">
+        <img src="../assets/img/ok-emoji.svg">
+      </div>
+      <div class="label-with-text label-green">
+        Come back to the bot and describe the problem
+      </div>
+    </div>
+  </div>

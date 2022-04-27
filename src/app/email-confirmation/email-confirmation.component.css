@@ -1,0 +1,56 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.main-content {
+    max-width: 310px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.label-with-text {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.label-green {
+    color: var(--color-green);
+}
+
+.input_wrapper {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.label-error {
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: var(--color-red);
+    margin-bottom: 20px;
+}
+
+button {
+    min-width: 226px;
+    margin-bottom: 20px;
+}
+
+.label-to-note {
+    font-weight: 400;
+    text-align: center;
+    font-size: 18px;
+    color: var(--color-gray) 
+}
+
+.success-emoji {
+    width: 50px;
+    height: auto;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,84 @@
+@font-face {
+    font-family: "Inter";
+    src: local("Inter"), url(./assets/fonts/Inter/Inter-VariableFont.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Space Grotesk";
+    src: local("Space Grotesk"), url(./assets/fonts/SpaceGrotesk/SpaceGrotesk-VariableFont_wght.ttf) format("truetype");
+}
+
+:root {
+    --color-white: #fff;
+    --color-black: #000;
+    --color-green: #00ff46;
+    --color-gray: #666;
+    --color-dark-gray: #1D1D1D;
+    --color-red: #FF001D;
+}
+
+body {
+    font-family: 'Inter';
+    font-style: normal;
+    color: var(--color-white);
+    background-color: var(--color-black);
+}
+
+input {
+    font-family: 'Space Grotesk';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+    color: var(--color-green);
+    width: 100%;
+    background-color: var(--color-black);
+    border: none;
+    border-bottom: 1px solid var(--color-white);
+    outline: none;
+}
+
+input:focus {
+    border-bottom: 3px solid var(--color-white);
+    margin: -1px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+button {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    padding: 0.9em 2.95em;
+    flex-shrink: 0;
+    border-radius: 90px;
+    color: var(--color-black);
+}
+
+.btn-green {
+    background: var(--color-green);
+    border: 2px solid var(--color-green);
+}
+
+.btn-green:hover {
+    background: transparent;
+    color: var(--color-green);
+}
+
+.btn-gray {
+    background: var(--color-gray);
+    border: 2px solid var(--color-gray);
+}
+
+.btn-gray:hover {
+    background: transparent;
+    color: var(--color-gray);
+}

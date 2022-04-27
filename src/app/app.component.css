@@ -1,0 +1,53 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--color-dark-gray);
+    padding: 20px;
+    margin-bottom: 90px;
+}
+
+.header .logo {
+    height: 20px;
+}
+
+.custom-select {
+    font-size: 14px;
+    position: relative;
+    border-radius: 15px;
+    background-color: var(--color-dark-gray);
+}
+
+.custom-select select {
+    display: none;
+}
+
+.country-flag {
+    height: 16px;
+    width: auto;
+    margin-right: 3px;
+}
+
+.select-selected {
+    white-space: nowrap;
+    padding: 4px 20px 4px 10px;
+    margin-bottom: 0;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+
+.select-selected:after {
+    position: absolute;
+    content: "";
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 6px;
+    width: 6px;
+    background-repeat: no-repeat;
+    transform: rotate(180deg);
+    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg width='6' height='5' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M2.74.45a.3.3 0 01.52 0l2.078 3.6a.3.3 0 01-.26.45H.922a.3.3 0 01-.26-.45L2.74.45z' fill='%23fff'/%3E%3C/svg%3E");
+}
