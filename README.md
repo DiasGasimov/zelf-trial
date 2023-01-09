@@ -1,6 +1,7 @@
 # ZelfTrial
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.0.
+The task here is about creating the page for support ticket registration using Figma layout ( unfortunately it was deleted and unavailable now ).
+Here you can find email and SMS code verification. Of course, there are no backend connected, so I used some mockup data.
 
 ## Development server
 
